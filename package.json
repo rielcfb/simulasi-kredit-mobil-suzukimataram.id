@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.2.0",
-    "parcel-bundler": "^1.6.1"
+    "parcel": "latest"
   },
   "license": "(MIT OR Apache-2.0)",
   "author": "Riel CFB <riel.cfb@gmail.com> (http://rielcfb.github.io/)",
