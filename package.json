@@ -2,10 +2,9 @@
   "name": "simulasi-kredit-mobil-with-mithril-js",
   "version": "1.0.0",
   "description": "Simulasi Kredit Mobil Suzuki Mataram",
-  "main": "public/index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir public"
   },
   "dependencies": {
     "mithril": "2.0.4"
