@@ -103,6 +103,9 @@ function hitung() {
     "Tolong di bantu detail info dan prosedurnya. \n\n" +
     "Terima Kasih.";
   hasResult = true;
+  if (typeof ga === "function") {
+    ga("send", "event", "Button", "Click", "Hitung Simulasi");
+  }
 }
 
 function hitungBunga() {
@@ -260,7 +263,13 @@ const App = {
               href:
                 "https://api.whatsapp.com/send?phone=6281907922588&text=" +
                 encodeURIComponent(resultText),
-              target: getTarget()
+              target: getTarget(),
+              rel: "nofollow noreferrer",
+              onclick: function () {
+                if (typeof ga === "function") {
+                  ga("send", "event", "Button", "Click", "Konsultasi via WA");
+                }
+              }
             },
             "Konsultasi via WA"
           )
