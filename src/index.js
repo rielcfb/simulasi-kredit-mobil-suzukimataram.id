@@ -265,10 +265,10 @@ const App = {
             "Konsultasi via WA"
           )
         ]),
-        m("div", { class: "footer" }, [
+        m("div", { class: "foot" }, [
           m(
             "p",
-            "* Perhitungan simulasi ini tidak bersifat mengikat dan dapat berbeda dengan perhitungan di setiap dealer."
+            "* Perhitungan simulasi ini tidak bersifat aktual dan mengikat dan dapat berbeda berdasarkan perubahan harga dan suku bunga."
           )
         ])
       ])
@@ -276,5 +276,6 @@ const App = {
   }
 };
 
-const rootElement = document.getElementById("app");
+const rootElement =
+  window["simulasiAppContainer"] || document.getElementById("app");
 m.mount(rootElement, App);

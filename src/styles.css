@@ -69,6 +69,23 @@ body {
   flex-direction: column;
   border-top: 1px solid #0059aa;
   margin-top: 20px;
+  padding-top: 20px;
+  gap: 10px;
+}
+
+#app .result p {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+#app .result .angsuran {
+  border: 1px solid #1a1;
+  padding: 5px;
+}
+
+#app .result .angsuran strong {
+  color: #1a1;
 }
 
 #app .actions {
@@ -96,12 +113,12 @@ body {
   background-color: #1a1;
 }
 
-#app .footer {
+#app .foot {
   margin-top: 20px;
   border-top: 1px solid #aaa;
 }
 
-#app .footer p {
+#app .foot p {
   font-size: 12px;
   text-align: center;
   font-style: italic;

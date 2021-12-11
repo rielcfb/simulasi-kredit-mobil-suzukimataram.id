@@ -1,6 +1,6 @@
 {
   "name": "simulasi-kredit-mobil-with-mithril-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simulasi Kredit Mobil Suzuki Mataram",
   "scripts": {
     "start": "parcel index.html --open",
