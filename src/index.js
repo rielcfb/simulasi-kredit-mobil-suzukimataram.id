@@ -138,7 +138,7 @@ function getProductLists() {
 const App = {
   view: () => {
     return [
-      m("div", { class: "container" }, [
+      m("div", { class: "simulasi-app" }, [
         m("div", { class: "form" }, [
           m("label", "Pilih Model Mobil"),
           m(
@@ -278,4 +278,23 @@ const App = {
 
 const rootElement =
   window["simulasiAppContainer"] || document.getElementById("app");
-m.mount(rootElement, App);
+if (rootElement instanceof HTMLElement) {
+  m.mount(rootElement, App);
+}
+
+/**
+ * this script to load the app to attach it to main web https://suzukimataram.id
+ */
+function simulasiAppLoader(el) {
+  if (el && document.getElementById(el) instanceof HTMLElement) {
+    let appContainer = document.getElementById(el);
+    m.mount(appContainer, App);
+  } else {
+    // create container
+    let appContainer = document.createElement("div");
+    appContainer.id = el;
+    m.mount(document.getElementById(el), App);
+  }
+}
+
+window["simulasiAppLoader"] = simulasiAppLoader;

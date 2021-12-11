@@ -8,40 +8,40 @@ body {
     padding: 0;
     margin: 0;
   }
-  #app {
+  .simulasi-app {
     width: fit-content;
   }
 }
 
 @media screen and (min-width: 720px) {
-  #app {
+  .simulasi-app {
     max-width: 360px;
   }
 }
 
-#app {
+.simulasi-app {
   border: 1px solid #0059aa;
   padding: 10px;
   background: #eee;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
-#app .form {
+.simulasi-app .form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-#app .form input,
-#app .form select {
+.simulasi-app .form input,
+.simulasi-app .form select {
   padding: 5px;
   outline: none;
   border: 1px solid #aaa;
 }
-#app .form input:focus {
+.simulasi-app .form input:focus {
   border: 1px solid #0059aa;
   outline: none;
 }
-#app .form button {
+.simulasi-app .form button {
   padding: 15px 20px;
   background-color: #0059aa;
   color: #fff;
@@ -53,18 +53,18 @@ body {
   cursor: pointer;
 }
 
-#app .form button:not(:disabled):hover {
+.simulasi-app .form button:not(:disabled):hover {
   background-color: #0078ff;
 }
 
-#app .form button:disabled {
+.simulasi-app .form button:disabled {
   cursor: not-allowed;
   background-color: #96a0a9;
   border: 1px solid #96a0a9;
   color: #3a3a3a;
 }
 
-#app .result {
+.simulasi-app .result {
   display: flex;
   flex-direction: column;
   border-top: 1px solid #0059aa;
@@ -73,22 +73,22 @@ body {
   gap: 10px;
 }
 
-#app .result p {
+.simulasi-app .result p {
   display: flex;
   flex-direction: row;
   gap: 5px;
 }
 
-#app .result .angsuran {
+.simulasi-app .result .angsuran {
   border: 1px solid #1a1;
   padding: 5px;
 }
 
-#app .result .angsuran strong {
+.simulasi-app .result .angsuran strong {
   color: #1a1;
 }
 
-#app .actions {
+.simulasi-app .actions {
   margin-top: 20px;
   border-top: 1px solid #0059aa;
   padding-top: 20px;
@@ -96,11 +96,11 @@ body {
   justify-content: center;
 }
 
-#app .actions.has-result {
+.simulasi-app .actions.has-result {
   display: flex;
 }
 
-#app .actions .wa {
+.simulasi-app .actions .wa {
   background-color: #25d366;
   padding: 10px 20px;
   color: #fff;
@@ -109,16 +109,16 @@ body {
   border-radius: 5px;
 }
 
-#app .actions .wa:hover {
+.simulasi-app .actions .wa:hover {
   background-color: #1a1;
 }
 
-#app .foot {
+.simulasi-app .foot {
   margin-top: 20px;
   border-top: 1px solid #aaa;
 }
 
-#app .foot p {
+.simulasi-app .foot p {
   font-size: 12px;
   text-align: center;
   font-style: italic;
