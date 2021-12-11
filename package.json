@@ -1,7 +1,7 @@
 {
-  "name": "mithril-js-template",
+  "name": "simulasi-kredit-mobil-with-mithril-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simulasi Kredit Mobil https://suzukimataramid",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
