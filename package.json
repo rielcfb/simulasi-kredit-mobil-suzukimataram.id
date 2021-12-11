@@ -2,7 +2,7 @@
   "name": "simulasi-kredit-mobil-with-mithril-js",
   "version": "1.0.0",
   "description": "Simulasi Kredit Mobil Suzuki Mataram",
-  "main": "index.html",
+  "main": "public/index.html",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
@@ -14,5 +14,7 @@
     "@babel/core": "7.2.0",
     "parcel-bundler": "^1.6.1"
   },
-  "keywords": []
+  "license": "(MIT OR Apache-2.0)",
+  "author": "Riel CFB <riel.cfb@gmail.com> (http://rielcfb.github.io/)",
+  "keywords": ["mithril", "car simulation", "lombok"]
 }
