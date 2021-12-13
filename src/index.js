@@ -166,7 +166,6 @@ const App = {
             type: "number",
             id: "harga",
             placeholder: "Masukkan harga Mobil",
-            autofocus: true,
             oninput: function (e) {
               harga = parseInt(this.value, 0);
               console.log(e);
@@ -268,8 +267,16 @@ const App = {
                 encodeURIComponent(resultText),
               target: getTarget(),
               rel: "nofollow noreferrer",
-              onclick:
-                "'function' === typeof gtag && gtag('event', 'click', { event_category: 'Simulasi', event_label: 'Konsultasi' })"
+              onclick: function (e) {
+                console.info("Konsultasi button clicked..");
+                if (typeof gtag === "function") {
+                  gtag("event", "click", {
+                    event_category: "Simulasi",
+                    event_label: "Konsultasi"
+                  });
+                  console.info("ga event has been sent..");
+                }
+              }
             },
             "Konsultasi via WA"
           )
