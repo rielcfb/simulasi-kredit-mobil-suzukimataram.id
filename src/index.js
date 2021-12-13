@@ -103,8 +103,11 @@ function hitung() {
     "Tolong di bantu detail info dan prosedurnya. \n\n" +
     "Terima Kasih.";
   hasResult = true;
-  if (typeof ga === "function") {
-    ga("send", "event", "Button", "Click", "Hitung Simulasi");
+  if (typeof gtag === "function") {
+    gtag("event", "click", {
+      event_category: "Simulasi",
+      event_label: "Hitung"
+    });
   }
 }
 
@@ -265,11 +268,8 @@ const App = {
                 encodeURIComponent(resultText),
               target: getTarget(),
               rel: "nofollow noreferrer",
-              onclick: function () {
-                if (typeof ga === "function") {
-                  ga("send", "event", "Button", "Click", "Konsultasi via WA");
-                }
-              }
+              onclick:
+                "'function' === typeof gtag && gtag('event', 'click', { event_category: 'Simulasi', event_label: 'Konsultasi' })"
             },
             "Konsultasi via WA"
           )
